@@ -1,0 +1,6 @@
+framework module TTTAttributedLabelVodafone {
+  umbrella header "TTTAttributedLabelVodafone-umbrella.h"
+
+  export *
+  module * { export * }
+}

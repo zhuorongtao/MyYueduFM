@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="myU-ZY-HpI" customClass="PlayBarActionTableViewCell" customModule="MyYueduFM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="myU-ZY-HpI" id="A34-Vm-WAU">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43n-Y3-wSb" customClass="UIVButton" customModule="MyYueduFM" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="61" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="下载" image="icon_action_download.png">
+                            <color key="titleShadowColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytj-Yn-ney" customClass="UIVButton" customModule="MyYueduFM" customModuleProvider="target">
+                        <rect key="frame" x="69" y="8" width="61" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="收藏" image="icon_action_favor.png">
+                            <color key="titleShadowColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4h-yJ-2gj" customClass="UIVButton" customModule="MyYueduFM" customModuleProvider="target">
+                        <rect key="frame" x="130" y="8" width="60" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="添加到" image="icon_action_add.png">
+                            <color key="titleShadowColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpQ-X4-Pdh" customClass="UIVButton" customModule="MyYueduFM" customModuleProvider="target">
+                        <rect key="frame" x="190" y="8" width="61" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="分享" image="icon_action_share.png">
+                            <color key="titleShadowColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntK-IZ-QWK" customClass="UIVButton" customModule="MyYueduFM" customModuleProvider="target">
+                        <rect key="frame" x="251" y="8" width="61" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" image="icon_bar_down.png">
+                            <color key="titleShadowColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="ntK-IZ-QWK" secondAttribute="bottom" id="167-ae-JfL"/>
+                    <constraint firstItem="43n-Y3-wSb" firstAttribute="width" secondItem="D4h-yJ-2gj" secondAttribute="width" id="3TI-Zi-HtL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="EpQ-X4-Pdh" secondAttribute="bottom" id="80t-NF-i2I"/>
+                    <constraint firstItem="EpQ-X4-Pdh" firstAttribute="leading" secondItem="D4h-yJ-2gj" secondAttribute="trailing" id="9iC-5m-AX6"/>
+                    <constraint firstItem="43n-Y3-wSb" firstAttribute="leading" secondItem="A34-Vm-WAU" secondAttribute="leadingMargin" id="Cbo-PR-YZa"/>
+                    <constraint firstItem="D4h-yJ-2gj" firstAttribute="leading" secondItem="ytj-Yn-ney" secondAttribute="trailing" id="Iho-HN-mfV"/>
+                    <constraint firstItem="EpQ-X4-Pdh" firstAttribute="width" secondItem="D4h-yJ-2gj" secondAttribute="width" id="KHV-wb-b4X"/>
+                    <constraint firstItem="ntK-IZ-QWK" firstAttribute="width" secondItem="D4h-yJ-2gj" secondAttribute="width" id="S8a-Q8-ivR"/>
+                    <constraint firstItem="ytj-Yn-ney" firstAttribute="width" secondItem="D4h-yJ-2gj" secondAttribute="width" id="U7Q-vi-qZL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="D4h-yJ-2gj" secondAttribute="bottom" id="UhL-tI-UeX"/>
+                    <constraint firstItem="ntK-IZ-QWK" firstAttribute="top" secondItem="A34-Vm-WAU" secondAttribute="topMargin" id="Vwp-92-uFP"/>
+                    <constraint firstItem="43n-Y3-wSb" firstAttribute="top" secondItem="A34-Vm-WAU" secondAttribute="topMargin" id="XFe-ff-dwk"/>
+                    <constraint firstItem="ntK-IZ-QWK" firstAttribute="leading" secondItem="EpQ-X4-Pdh" secondAttribute="trailing" id="Ya3-ud-HYP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="43n-Y3-wSb" secondAttribute="bottom" id="YbY-cm-TGP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ntK-IZ-QWK" secondAttribute="trailing" id="ZXf-9d-wHd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ytj-Yn-ney" secondAttribute="bottom" id="e0A-IE-l5R"/>
+                    <constraint firstItem="ytj-Yn-ney" firstAttribute="top" secondItem="A34-Vm-WAU" secondAttribute="topMargin" id="l6f-ZI-bP1"/>
+                    <constraint firstItem="EpQ-X4-Pdh" firstAttribute="top" secondItem="A34-Vm-WAU" secondAttribute="topMargin" id="rEf-KP-csB"/>
+                    <constraint firstItem="ytj-Yn-ney" firstAttribute="leading" secondItem="43n-Y3-wSb" secondAttribute="trailing" id="uWC-wR-2IX"/>
+                    <constraint firstItem="D4h-yJ-2gj" firstAttribute="top" secondItem="A34-Vm-WAU" secondAttribute="topMargin" id="zw8-Qa-6sj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="addButton" destination="D4h-yJ-2gj" id="bvD-Ia-VuT"/>
+                <outlet property="downloadButton" destination="43n-Y3-wSb" id="flj-Uq-P6v"/>
+                <outlet property="favorButton" destination="ytj-Yn-ney" id="LrJ-1d-kth"/>
+                <outlet property="hideButton" destination="ntK-IZ-QWK" id="Wkm-yI-FjD"/>
+                <outlet property="shareButton" destination="EpQ-X4-Pdh" id="ZCM-Bw-qnN"/>
+            </connections>
+            <point key="canvasLocation" x="242" y="240"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_action_add.png" width="35" height="30"/>
+        <image name="icon_action_download.png" width="35" height="30"/>
+        <image name="icon_action_favor.png" width="35" height="30"/>
+        <image name="icon_action_share.png" width="35" height="30"/>
+        <image name="icon_bar_down.png" width="35" height="30"/>
+    </resources>
+</document>

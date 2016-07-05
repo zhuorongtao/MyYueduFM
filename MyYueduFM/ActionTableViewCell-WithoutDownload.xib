@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="xVx-0x-s1R" customClass="ActionTableViewCell" customModule="MyYueduFM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xVx-0x-s1R" id="A5E-gf-3XB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtD-aT-xez" customClass="UIVButton" customModule="MyYueduFM" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="71" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="详情" image="icon_action_info.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bn1-VS-fbS" customClass="UIVButton" customModule="MyYueduFM" customModuleProvider="target">
+                        <rect key="frame" x="79" y="8" width="71" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="收藏" image="icon_action_favor.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfd-zF-fZc" customClass="UIVButton" customModule="MyYueduFM" customModuleProvider="target">
+                        <rect key="frame" x="150" y="8" width="71" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="添加到" image="icon_action_add.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1D-yh-O9v" customClass="UIVButton" customModule="MyYueduFM" customModuleProvider="target">
+                        <rect key="frame" x="221" y="8" width="71" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="分享" image="icon_action_share.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bn1-VS-fbS" firstAttribute="top" secondItem="A5E-gf-3XB" secondAttribute="topMargin" id="03w-9v-2UY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="L1D-yh-O9v" secondAttribute="bottom" id="3ko-MM-XCX"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tfd-zF-fZc" secondAttribute="bottom" id="5w6-7v-Vay"/>
+                    <constraint firstItem="Bn1-VS-fbS" firstAttribute="width" secondItem="OtD-aT-xez" secondAttribute="width" id="I74-70-XR0"/>
+                    <constraint firstItem="L1D-yh-O9v" firstAttribute="top" secondItem="A5E-gf-3XB" secondAttribute="topMargin" id="Rhj-XK-d5M"/>
+                    <constraint firstItem="Bn1-VS-fbS" firstAttribute="leading" secondItem="OtD-aT-xez" secondAttribute="trailing" id="T5C-JJ-zxh"/>
+                    <constraint firstItem="OtD-aT-xez" firstAttribute="top" secondItem="A5E-gf-3XB" secondAttribute="topMargin" id="g9n-h7-XQ7"/>
+                    <constraint firstItem="tfd-zF-fZc" firstAttribute="top" secondItem="A5E-gf-3XB" secondAttribute="topMargin" id="kDk-su-LtM"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="OtD-aT-xez" secondAttribute="leading" id="kFp-Yf-S44"/>
+                    <constraint firstItem="L1D-yh-O9v" firstAttribute="leading" secondItem="tfd-zF-fZc" secondAttribute="trailing" id="ltu-8H-lka"/>
+                    <constraint firstItem="tfd-zF-fZc" firstAttribute="leading" secondItem="Bn1-VS-fbS" secondAttribute="trailing" id="pDC-8F-y6H"/>
+                    <constraint firstItem="tfd-zF-fZc" firstAttribute="width" secondItem="OtD-aT-xez" secondAttribute="width" id="ulS-s4-xj2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Bn1-VS-fbS" secondAttribute="bottom" id="vAq-zl-2xI"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OtD-aT-xez" secondAttribute="bottom" id="xGd-WV-aS8"/>
+                    <constraint firstItem="L1D-yh-O9v" firstAttribute="width" secondItem="OtD-aT-xez" secondAttribute="width" id="y3T-ME-hHw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="addButton" destination="tfd-zF-fZc" id="Z6e-eX-KOl"/>
+                <outlet property="detailButton" destination="OtD-aT-xez" id="N21-HJ-IYl"/>
+                <outlet property="favorButton" destination="Bn1-VS-fbS" id="Bsw-rj-hoJ"/>
+                <outlet property="shareButton" destination="L1D-yh-O9v" id="i61-q5-3e0"/>
+            </connections>
+            <point key="canvasLocation" x="202" y="342.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_action_add.png" width="35" height="30"/>
+        <image name="icon_action_favor.png" width="35" height="30"/>
+        <image name="icon_action_info.png" width="35" height="30"/>
+        <image name="icon_action_share.png" width="35" height="30"/>
+    </resources>
+</document>
